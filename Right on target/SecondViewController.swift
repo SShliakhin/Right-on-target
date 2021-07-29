@@ -39,7 +39,4 @@ class SecondViewController: UIViewController {
         print(#function, 2)
     }
 
-    @IBAction func hideCurrentScene() {
-        dismiss(animated: true, completion: nil)
-    }
 }

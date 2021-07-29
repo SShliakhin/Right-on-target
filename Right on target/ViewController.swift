@@ -87,8 +87,6 @@ class ViewController: UIViewController {
         label.text = String(describing: number)
     }
     
-    @IBAction func showNextScreen() {
-        present(secondViewController, animated: true, completion: nil)
-    }
+    
 }
 
