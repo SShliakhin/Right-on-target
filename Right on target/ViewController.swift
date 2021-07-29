@@ -22,9 +22,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(#function)
-        game = Game(startValue: 1, endValue: 50, rounds: 5)
-        updateLabelWithSecretNumber(newText: String(describing: game.currentSecretValue))
+        // Создаем генератор случайных чисел
+        let generator = Generator(startValue: 1, endValue: 50)!
+        game = Game(valueGenerator: generator, rounds: 5)
+        updateLabelWithSecretNumber(newText: String(describing: game.currentRound.currentSecretValue))
     }
     
     // MARK: Custom methods
@@ -44,7 +45,7 @@ class ViewController: UIViewController {
     
     @IBAction func checkNumber() {
         let numSlider = Int(slider.value.rounded())
-        game.calculateScore(with: numSlider)
+        game.currentRound.calculateScoreWith(with: numSlider)
         
         if game.isGameEnded {
             showAlertWith(score: game.score)
@@ -52,7 +53,7 @@ class ViewController: UIViewController {
         } else {
             game.startNewRound()
         }
-        updateLabelWithSecretNumber(newText: String(describing: game.currentSecretValue))
+        updateLabelWithSecretNumber(newText: String(describing: game.currentRound.currentSecretValue))
     }
     
 }

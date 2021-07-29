@@ -13,8 +13,9 @@
 		5A01BE1D26B2021800F5500F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A01BE1B26B2021800F5500F /* Main.storyboard */; };
 		5A01BE1F26B2022500F5500F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A01BE1E26B2022500F5500F /* Assets.xcassets */; };
 		5A01BE2226B2022500F5500F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A01BE2026B2022500F5500F /* LaunchScreen.storyboard */; };
-		5A01BE3126B2CEE500F5500F /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01BE3026B2CEE500F5500F /* GameProtocol.swift */; };
 		5A01BE3526B2CFF500F5500F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01BE3426B2CFF500F5500F /* Game.swift */; };
+		5A01BE3B26B2F5FE00F5500F /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01BE3A26B2F5FE00F5500F /* GameRound.swift */; };
+		5A01BE3E26B2F87C00F5500F /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01BE3D26B2F87C00F5500F /* Generator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		5A01BE1E26B2022500F5500F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A01BE2126B2022500F5500F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A01BE2326B2022500F5500F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A01BE3026B2CEE500F5500F /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		5A01BE3426B2CFF500F5500F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5A01BE3A26B2F5FE00F5500F /* GameRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		5A01BE3D26B2F87C00F5500F /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +77,9 @@
 		5A01BE2F26B2CEB200F5500F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5A01BE3026B2CEE500F5500F /* GameProtocol.swift */,
 				5A01BE3426B2CFF500F5500F /* Game.swift */,
+				5A01BE3D26B2F87C00F5500F /* Generator.swift */,
+				5A01BE3A26B2F5FE00F5500F /* GameRound.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,8 +156,9 @@
 			files = (
 				5A01BE1A26B2021800F5500F /* ViewController.swift in Sources */,
 				5A01BE3526B2CFF500F5500F /* Game.swift in Sources */,
-				5A01BE3126B2CEE500F5500F /* GameProtocol.swift in Sources */,
 				5A01BE1626B2021800F5500F /* AppDelegate.swift in Sources */,
+				5A01BE3E26B2F87C00F5500F /* Generator.swift in Sources */,
+				5A01BE3B26B2F5FE00F5500F /* GameRound.swift in Sources */,
 				5A01BE1826B2021800F5500F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sas.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -329,7 +333,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sas.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
