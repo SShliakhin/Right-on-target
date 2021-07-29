@@ -13,6 +13,7 @@
 		5A01BE1D26B2021800F5500F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A01BE1B26B2021800F5500F /* Main.storyboard */; };
 		5A01BE1F26B2022500F5500F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A01BE1E26B2022500F5500F /* Assets.xcassets */; };
 		5A01BE2226B2022500F5500F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A01BE2026B2022500F5500F /* LaunchScreen.storyboard */; };
+		5A01BE2C26B2940500F5500F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01BE2B26B2940500F5500F /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5A01BE1E26B2022500F5500F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A01BE2126B2022500F5500F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A01BE2326B2022500F5500F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A01BE2B26B2940500F5500F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				5A01BE1526B2021800F5500F /* AppDelegate.swift */,
 				5A01BE1726B2021800F5500F /* SceneDelegate.swift */,
 				5A01BE1926B2021800F5500F /* ViewController.swift */,
+				5A01BE2B26B2940500F5500F /* SecondViewController.swift */,
 				5A01BE1B26B2021800F5500F /* Main.storyboard */,
 				5A01BE1E26B2022500F5500F /* Assets.xcassets */,
 				5A01BE2026B2022500F5500F /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A01BE2C26B2940500F5500F /* SecondViewController.swift in Sources */,
 				5A01BE1A26B2021800F5500F /* ViewController.swift in Sources */,
 				5A01BE1626B2021800F5500F /* AppDelegate.swift in Sources */,
 				5A01BE1826B2021800F5500F /* SceneDelegate.swift in Sources */,
@@ -293,6 +297,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sas.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -312,6 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sas.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
