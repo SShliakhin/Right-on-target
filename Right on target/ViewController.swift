@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     var points = 0
     var round = 1
     
-    lazy var secondViewController = getSecondViewController()
-    
     // MARK: Life cycle
     override func loadView() {
         super.loadView()
@@ -57,11 +55,6 @@ class ViewController: UIViewController {
     }
     
     // MARK: Custom methods
-    private func getSecondViewController() -> SecondViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "SecondViewController")
-        return vc as! SecondViewController
-    }
 
     // MARK: Actions
     @IBAction func checkNumber() {
@@ -87,8 +80,5 @@ class ViewController: UIViewController {
         label.text = String(describing: number)
     }
     
-    @IBAction func showNextScreen() {
-        present(secondViewController, animated: true, completion: nil)
-    }
 }
 

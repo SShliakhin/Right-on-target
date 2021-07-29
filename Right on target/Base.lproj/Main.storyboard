@@ -38,13 +38,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAk-T1-fPm">
-                                <rect key="frame" x="790" y="363" width="42" height="30"/>
-                                <state key="normal" title="About"/>
-                                <connections>
-                                    <action selector="showNextScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="ox3-Yd-qFB"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -52,9 +45,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CdS-dY-jqa" secondAttribute="trailing" constant="20" id="0S2-la-GvS"/>
                             <constraint firstItem="Qfr-9f-l9b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="11d-B1-Cgx"/>
                             <constraint firstItem="LjM-q9-b8y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Lr-B4-oSf"/>
-                            <constraint firstItem="YAk-T1-fPm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9pa-cj-gYR"/>
                             <constraint firstItem="CdS-dY-jqa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BhL-Y7-NHP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YAk-T1-fPm" secondAttribute="trailing" constant="20" id="G9U-gT-lz6"/>
                             <constraint firstItem="CdS-dY-jqa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K5a-Sk-l18"/>
                             <constraint firstItem="LjM-q9-b8y" firstAttribute="top" secondItem="Qfr-9f-l9b" secondAttribute="bottom" constant="30" id="UZ0-xj-ENc"/>
                             <constraint firstItem="Qfr-9f-l9b" firstAttribute="top" secondItem="CdS-dY-jqa" secondAttribute="bottom" constant="30" id="flN-du-ppn"/>
@@ -70,43 +61,10 @@
             </objects>
             <point key="canvasLocation" x="-720" y="58"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="ZAF-dE-7Zz">
-            <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="Oj2-qb-BU0" customClass="SecondViewController" customModule="Right_on_target" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2l9-nH-Gdb">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51l-Nh-eWf">
-                                <rect key="frame" x="424.5" y="189" width="47" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="hideCurrentScene" destination="Oj2-qb-BU0" eventType="touchUpInside" id="KVQ-l4-7Bc"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="771-g1-2OB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="51l-Nh-eWf" firstAttribute="centerY" secondItem="2l9-nH-Gdb" secondAttribute="centerY" id="aja-fn-owP"/>
-                            <constraint firstItem="51l-Nh-eWf" firstAttribute="centerX" secondItem="2l9-nH-Gdb" secondAttribute="centerX" id="hdS-ah-XIU"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="d4I-F3-Q5G"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mFq-3l-7uW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-44" y="58"/>
-        </scene>
     </scenes>
     <resources>
         <image name="1.square.fill" catalog="system" width="128" height="114"/>
         <image name="50.square.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
