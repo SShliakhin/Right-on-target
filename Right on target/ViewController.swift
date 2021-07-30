@@ -20,12 +20,38 @@ class ViewController: UIViewController {
     
     // MARK: Life cycle
     
+    override func loadView() {
+        super.loadView()
+        print(#function)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(#function)
         // Создаем генератор случайных чисел
         let generator = Generator(startValue: 1, endValue: 50)!
         game = Game(valueGenerator: generator, rounds: 5)
         updateLabelWithSecretNumber(newText: String(describing: game.currentRound.currentSecretValue))
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(#function)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print(#function)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print(#function)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print(#function)
     }
     
     // MARK: Custom methods
